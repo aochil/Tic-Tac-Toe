@@ -109,7 +109,7 @@ const game = (()=>{
                 el.textContent = gameboard.getBoard[index];
                 moves += 1;     //every time a player makes a move, it is counted and if moves = 9, its a draw
                 switchPlayers();
-                
+
                 didPlayerWin(player1);              //checks if either player won after every mark
                 didPlayerWin(player2);  
 
@@ -127,6 +127,7 @@ const game = (()=>{
                         showWinnerMsg(`It's a draw.`)
                         gameboard.clearCell();
                         stopPlay();
+                        clearBoard();
                         play();
                         moves = 0;
                     }
