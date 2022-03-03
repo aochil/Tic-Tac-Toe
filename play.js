@@ -123,7 +123,7 @@ const game = (()=>{
                     win = 0;
                     }
                     
-                    if(moves == 9) {
+                    else if(moves == 9) {
                         showWinnerMsg(`It's a draw.`)
                         gameboard.clearCell();
                         stopPlay();
