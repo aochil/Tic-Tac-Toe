@@ -202,10 +202,10 @@ const game = (()=>{
                         win = 1;
 
                         //score updates depending on which player wins
-                        if(currentPlayer == player1) {
+                        if(currentPlayer === player2) {
                             player1Score += 1;
                             document.getElementById('scoreX').textContent = player1Score;
-                        } else if(currentPlayer == player2){
+                        } else if(currentPlayer === player1){
                             player2Score += 1;
                             document.getElementById('scoreO').textContent = player2Score;
                         }
