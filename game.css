@@ -1,0 +1,67 @@
+#gameboard{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    width: 460px;
+    height: 459px;
+    margin-top: 15px;
+}
+.cell{
+    width: 150px;
+    height: 150px;
+    border: solid ;
+    cursor: pointer;
+    text-align: center;
+    font-size: 128px;
+}
+
+
+header{
+    text-align: center;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+#winner{
+    text-align: center;
+    width: auto;
+    height: 22px;
+}
+
+#belowWinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#container{
+    display: flex;
+}
+
+.player{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    padding-bottom: 20%;
+    font-size: xx-large;
+    margin: auto;
+}
+
+#clearBoard,
+#resetScore{
+    border-radius: 15px;
+    margin: 5px
+}
+
+#coverGameboard{
+    width: 459px;
+    height: 459px;
+    position: absolute;
+    background-color: black;
+    opacity: .1;
+}
